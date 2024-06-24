@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 class EvenNumbers:
-    def __init__(self, start, end):
+    def __init__(self, start=0, end=1):
         self.start = start
         self.end = end
 
