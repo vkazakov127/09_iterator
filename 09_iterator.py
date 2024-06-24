@@ -14,13 +14,13 @@ class EvenNumbers:
         if self.i >= self.start:
             if self.i > self.end:
                 raise StopIteration()
-            return self.i if not self.i % 2 else False
+            return self.iself.i, True if not self.i % 2 else False, False  # Для корректной обработки start = 0
 
 
 # Вызов итератора
 en = EvenNumbers(10, 25)
 print(f'Чётные числа от {en.start} до {en.end}:')
 for i in en:
-    if i:
-        print(i)
+    if i[1]:  # Печатать, если чётное число
+        print(i[0])
 
