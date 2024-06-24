@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 class EvenNumbers:
-    def __init__(self, start=0, end=1):
+    def __init__(self, start=0, end=1):  # Согласно условию задачи
         self.start = start
         self.end = end
 
@@ -12,7 +12,7 @@ class EvenNumbers:
     def __next__(self):
         self.i += 1  # Инкремент счётчика итератора
         if self.i % 2: # Если нечётное число, то следующий элемент
-            self.i += 1  # Ещё один инкремент счётчика итератора
+            self.i += 1
         if self.i >= self.start:
             if self.i > self.end:
                 raise StopIteration()
